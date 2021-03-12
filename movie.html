@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="bootstrap.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form > 
+        <p> name <input type="text" name='name'/> <img src="IronMan.jpg" length="30px"height="30px"></p>
+        <p> Matrix <input type="text" name='Matrix'/><img src="mat.jpg" length="30px"height="30px"></p>
+        <p> IronMan<input type="text" name='IronMan'/><img src="av.jpg" length="30px"height="30px"></p>
+        <p> Avengers<input type="text" name='Avengers'/><img src="iron.jpg" length="30px"height="30px"></p>
+        <p> <input type="submit" value="submit"/></p>
+ 
+     </form>
+     <table border=3>
+        {%  for key,value in movie.items() %}
+        <tr>
+            <th>{{key}}</th>
+            <td>{{value}}</td>
+        
+        </tr>
+        {% endfor%}
+            </table>
+</body>
+</html>
